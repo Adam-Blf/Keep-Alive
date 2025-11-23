@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: keep-alive-service
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    plan: free
+    branch: main
+    envVars:
+      - key: NODE_VERSION
+        value: 20.11.0
